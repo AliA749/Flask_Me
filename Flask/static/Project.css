@@ -1,0 +1,82 @@
+body{
+	background-color:#dfd3c3;
+	text-align:center;
+	font-size:40px;
+}
+label{
+	color:#596e79;
+	font-size:25px;
+	font-weight:bold;
+}
+h1{
+	color:#596e79;
+}
+#lblError{
+	color:Red;
+}
+button{
+	border-radius: 5px;
+	border-color:#596e79;
+	color:#596e79;
+	background-color:#dfd3c3;
+	font-size:16px;
+}
+#lblusername,#dispfullname,#dispEmail,#dispAge,#dispSLC{
+	margin-left:5px;
+	float:left;
+}
+#dispSLC{
+	margin-top:5px;
+}
+#dispDOB,#dispSchool,#dispID{
+	margin-right:5px;
+	float:right;
+}
+#imgpfp,#imgSLC{
+	float:left;
+	border-radius: 50%;
+	width:40px;
+	height:40px;
+}
+#lblfullname{
+	z-index:2;
+	margin-top:-10px;
+}
+#screen
+{	margin-left:25px;
+	border-style:solid;
+	background-color:#dfd3c3;
+	padding-left:200px;
+	padding-right:200px;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+#buttons,button
+{
+	height:60px;
+	width:60px;
+	padding-left:15px;
+	padding-right:15px;
+	background-color:#dfd3c3;
+}
+#buttons
+{
+	width:100%;
+	text-align:center;
+	background-color:#dfd3c3;
+}
+
+#btnC
+{
+	width:125px;
+	height:60px;
+}
+#btnEqu
+{
+	width:125px;
+	height:60px;
+}
+#btnSubmit,#btnSI,#btnCI,#btnIT
+{
+	width:120px;
+}

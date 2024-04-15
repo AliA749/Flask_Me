@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Pesonal Info Page</title>
+		<link rel = "stylesheet" href="\static\Project.css">
+	</head>
+	<body>
+	<p id="Form2Holder">
+	<form method="post">
+		<img id= "imgpfp"src="\static\profilepic.jpeg" alt="profile pic">
+		<label id = "lblusername">{{Name}}</label><br>
+		<label id="lblfullname" name="lblfullname">Enter fullname (first last): </label><br>
+        <input type="text" name="txtfullname"><br><br>
+		<label id="lblage" name="lblage">Enter age: </label><br>
+        <input type="number" name="txtage"><br><br>
+		<label id="lblemail" name="lblemail">Enter email: </label><br>
+        <input type="text" name="txtemail"><br><br>
+		<label id="lblDOB" name="lblDOB">Enter Date of Birth: </label><br>
+        <input type="text" name="txtDOB"><br><br>
+		<label id="lblSchool" name="lblSchool">Enter School: </label><br>
+        <input type="text" name="txtSchool"><br><br>
+		<label id="lblID" name="lblID">Enter Student id: </label><br>
+        <input type="number" name="txtID"><br><br>
+		<label for="SLCselector">Choose your SLC:</label><br>
+			<select name="SLCselector" id="SLCselector">
+			<option value=""></option>
+			<option value="Pre-Med">Pre-med</option>
+			<option value="HSSE">HSSE</option>
+			<option value="Global Citizens">Global Citizens</option>
+			<option value="Humanities">Humanities</option>
+			<option value="APVA">APVA</option>
+			<option value="Public Service">Public Service</option>
+			<option value="TOT">Teachers Of Tommorow</option>
+			</select><br><br>
+		<button id = "btnSubmit" type="submit">Submit</button>
+    </form>
+	</p>
+	</body>
+</html>

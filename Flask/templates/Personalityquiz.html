@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Personality Quiz</title>
+		<link rel="stylesheet" type="text/css" href="/static/Project.css">
+	</head>
+	<body>
+		<h1>Personality Quiz</h1>
+		<form method="post">
+			<label id="dispfullname">Name: {{fullname}}</label>
+			<label id="dispDOB">D.O.B.: {{DOB}}</label>
+			<br>
+			<label id="dispEmail">Email: {{Email}}</label>
+			<label id="dispSchool">School: {{School}}</label>
+			<br>
+			<label id="dispAge">Age: {{Age}}</label>
+			<label id="dispID">Student ID: {{ID}}</label>
+			<br>
+			<img id= "imgSLC"src={{imgSLC}} alt="Slc pic">
+			<label id="dispSLC">SLC: {{SLC}}</label>
+			<br><br>
+			<table id="tbquestions">
+				<tr>
+					<td id="row1">
+						<label id="lblquestion1">Can you make friends easily?</label>
+						<input type="radio" name="personalitychoice1" value="yes">Yes</input>
+						<input type="radio"  name="personalitychoice1" value="no">No</input>
+					</td>
+				</tr>
+				<tr>
+					<td id="row2">
+						<label id="lblquestion1">Can you stay calm under pressure?</label>
+						<input type="radio" name="personalitychoice2" value="yes">Yes</input>
+						<input type="radio"  name="personalitychoice2" value="no">No</input>
+					</td>
+				</tr>
+				<tr>
+					<td id="row3">
+						<label id="lblquestion3">Do you work well in groups?</label>
+						<input type="radio" name="personalitychoice3" value="yes">Yes</input>
+						<input type="radio"  name="personalitychoice3" value="no">No</input>
+					</td>
+				</tr>
+				<tr>
+					<td id="row4">
+						<label id="lblquestion4">Do you take risks?</label>
+						<input type="radio" name="personalitychoice4" value="yes">Yes</input>
+						<input type="radio"  name="personalitychoice4" value="no">No</input>
+					</td>
+				</tr>
+				<tr>
+					<td id="row5">
+						<label id="lblquestion5">Do you care about how people see you?</label>
+						<input type="radio" name="personalitychoice5" value="yes">Yes</input>
+						<input type="radio"  name="personalitychoice5" value="no">No</input>
+					</td>
+				</tr>
+			</table>
+			<button type="submit" id="submitchoice1">Submit</button>
+		</form>
+	</body>
+</html>

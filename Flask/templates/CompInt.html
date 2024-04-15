@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Transfer Page</title>
+		<link rel = "stylesheet" href="\static\Project.css">
+	</head>
+	<body>
+	<label id="dispfullname">Name: {{fullname}}</label>
+	<label id="dispDOB">D.O.B.: {{DOB}}</label>
+	<br>
+	<label id="dispEmail">Email: {{Email}}</label>
+	<label id="dispSchool">School: {{School}}</label>
+	<br>
+	<label id="dispAge">Age: {{Age}}</label>
+	<label id="dispID">Student ID: {{ID}}</label>
+	<br>
+		<img id= "imgSLC"src={{imgSLC}} alt="Slc pic">
+	<label id="dispSLC">SLC: {{SLC}}</label>
+	<br>
+	
+	<form action="/CompInt" method="post">
+		<label id="lblPrincipal" name="lblPrincipal">What was your loan amount($): </label><br>
+        <input type="text" name="txtPrincipal"><br><br>
+		<label id="lblRate" name="lblRate">What is your interest rate(%): </label><br>
+        <input type="text" name="txtRate"><br><br>
+		<label id="lblComp" name="lblComp">How many times per year is it compounded: </label><br>
+        <input type="text" name="txtComp"><br><br>
+		<label id="lblTime" name="lblTime">How long have you had the loan(years): </label><br>
+        <input type="text" name="txtTime"><br><br>
+		<button id="btnSubmit" type="submit">Submit</button>
+	  <br><br>
+	  <label id="lblError">{{Error}}</label>
+    </form>
+	</body>
+</html>

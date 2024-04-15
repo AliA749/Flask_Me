@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>General intrest</title>
+	</head>
+	<body>
+		<h1>Your personality quiz</h1>
+		<form method="post">
+			<div id="resultsforquiz">
+			<label id="6">Your personality is: {{results}}  </label>
+			<br>
+			{% if results == "(A happy person) has a sense of contentment and joy.Their outlook on life is optimistic, finding delight in simple pleasures and maintaining a healthy balance between life and society. Happy individuals tend to be resilient in the face of challenges, focusing on solutions rather than dwelling on problems, and they spread happiness to those around them." %}
+            <img id="smileimg" src="/static/smile.jpg" style="width:20%">
+            {% endif %}
+			
+			{% if results == "(An anxious personality) is shown by constant feelings of fear that can significantly impact daily life. Individuals with an anxious personality may often experience excessive concern about various aspects of their lives, leading to difficulty in managing themselves."%}
+            <img id="anxiousimg" src="/static/anxious.jpeg" style="width:20%">
+            {% endif %}
+			
+			{% if results == "(A perfectionist) is someone who strives for flawlessness and sets exceptionally high standards for themselves, often feeling dissatisfaction when they see their work or achievements as falling short of their own criteria. They may exhibit tendencies of meticulousness, an intense focus on detail."%}
+            <img id="perfectimg" src="/static/perfect.jpg" style="width:20%">
+            {% endif %}
+			
+			{% if results == "(An introvert) is typically characterized by a preference for solitude, often feeling energized by solitary activities and introspection. They may engage in deep, meaningful conversations with a small circle of close friends." %}
+			<img id="introvertimg" src="/static/introvert.jpeg" style="width:20%">
+			{% endif %}
+			
+			{% if results == "(An extrovert) typically thrives in social situations, gaining energy from interaction with others and often exhibiting outgoing, talkative, and assertive traits." %}
+			<img id="extrovertimg" src="/static/extrovert.jpg" style="width:20%">
+			{% endif %}
+			
+			{% if results == "(An adventurous person)thrives on novelty, embraces uncertainty, and seeks out thrilling experiences to continuously push their boundaries and expand their horizons." %}
+			<img id="adventurousimg" src="/static/adventurous.jpg" style="width:20%">
+			{% endif %}
+			
+			</div>
+		</form>
+	</body>
+</html>

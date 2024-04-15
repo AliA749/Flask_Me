@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Financial Calculator Page</title>
+		<link rel = "stylesheet" href="\static\Project.css">
+	</head>
+	<body>
+	<label id="dispfullname">Name: {{fullname}}</label>
+	<label id="dispDOB">D.O.B.: {{DOB}}</label>
+	<br>
+	<label id="dispEmail">Email: {{Email}}</label>
+	<label id="dispSchool">School: {{School}}</label>
+	<br>
+	<label id="dispAge">Age: {{Age}}</label>
+	<label id="dispID">Student ID: {{ID}}</label>
+	<br>
+	<img id= "imgSLC"src={{imgSLC}} alt="Slc pic">
+	<label id="dispSLC">SLC: {{SLC}}</label>
+	<br>
+	<label>{{Message}}</label><br><br>
+    <label id="screen">{{abs1}}{{ P1 }} {{ Sign }} {{ P2 }}{{abs2}}</label>
+	<br><br>
+		<div id = "buttons">
+		<form action="/calculate" method="post">
+			<button type="submit" name="btn" id="btnC" value="C">Clear</button>
+			<button type="submit" name="btn" value="%">%</button>
+			<button type="submit" name="btn" value="/">/</button>
+			<button type="submit" name="btn" value="√">√</button>
+			<button type="submit" name="btn" value="|x|">|x|</button>
+			<br>
+			<button type="submit" name="btn" value="7">7</button>
+			<button type="submit" name="btn" value="8">8</button>
+			<button type="submit" name="btn" value="9">9</button>
+			<button type="submit" name="btn" value="x">x</button>
+			<button type="submit" name="btn" value="^2">X^2</button>
+			<button type="submit" name="btn" value="Sin">Sin</button>
+			<br>
+			<button type="submit" name="btn" value="4">4</button>
+			<button type="submit" name="btn" value="5">5</button>
+			<button type="submit" name="btn" value="6">6</button>
+			<button type="submit" name="btn" value="-">-</button>
+			<button type="submit" name="btn" value="^">X^X</button>
+			<button type="submit" name="btn" value="Cos">Cos</button>
+			<br>
+			<button type="submit" name="btn" value="1">1</button>
+			<button type="submit" name="btn" value="2">2</button>
+			<button type="submit" name="btn" value="3">3</button>
+			<button type="submit" name="btn" value="+">+</button>
+			<button type="submit" name="btn" value="e"><b>e</b></button>
+			<button type="submit" name="btn" value="Tan">Tan</button>
+			<br>
+			<button type="submit" name="btn" value="±">±</button>
+			<button type="submit" name="btn" value="0">0</button>
+			<button type="submit" name="btn" value="."><b>.</b></button>
+			<button type="submit" name="btn" value="π">π</button>
+			<button type="submit" name="btn" id="btnEqu" value="=">=</button><br>
+			<button type="submit" name="btn" id="btnSI" value="SI">Simple interest</button>
+			<button type="submit" name="btn" id="btnCI" value="CI">Compound interest</button>
+			<button type="submit" name="btn" id="btnIT" value="IT">Income and Tax</button>
+		</div>
+	  <br><br>
+    </form>
+	</body>
+</html>

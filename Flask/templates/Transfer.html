@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Transfer Page</title>
+		<link rel = "stylesheet" href="\static\Project.css">
+	</head>
+	<body>
+	<form method="post">
+	<label id="dispfullname">Name: {{fullname}}</label>
+	<label id="dispDOB">D.O.B.: {{DOB}}</label>
+	<br>
+	<label id="dispEmail">Email: {{Email}}</label><html>
+	<head>
+		<title>Transfer Page</title>
+		<link rel = "stylesheet" href="\static\Project.css">
+	</head>
+	<body>
+	<form method="post">
+	<label id="dispfullname">Name: {{fullname}}</label>
+	<label id="dispDOB">D.O.B.: {{DOB}}</label>
+	<br>
+	<label id="dispEmail">Email: {{Email}}</label>
+	<label id="dispSchool">School: {{School}}</label>
+	<br>
+	<label id="dispAge">Age: {{Age}}</label>
+	<label id="dispID">Student ID: {{ID}}</label>
+	<br>
+		<img id= "imgSLC"src={{imgSLC}} alt="Slc pic">
+	<label id="dispSLC">SLC: {{SLC}}</label>
+	<br>
+		<label for="Selector">Choose A Page To Go To:</label>
+			<select name="Selector" id="Selector">
+			<option value=""></option>
+			<option value="GenInterest">General Interest</option>
+			<option value="FinCalc">Financial calculator</option>
+			</select>
+		<button id="btnSubmit" type="submit">Submit</button>
+	  <br><br>
+	  <label id="lblError">{{Error}}</label>
+    </form>
+	</body>
+</html>
